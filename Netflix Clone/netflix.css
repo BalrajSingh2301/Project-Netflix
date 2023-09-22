@@ -1,0 +1,377 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+
+#body{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ),url(./images/netflixbackground.jpg);
+}
+
+/* container nav */
+#container{
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    margin-top: 0px;
+    height: 110px;
+}
+
+#container #navleft svg{
+    fill: #e50914;
+    width: 140px;
+    height: 80px;
+}
+
+
+#container #navright select,button{
+    color: white;
+}
+
+#navright{
+    position: relative;
+}
+
+#navright span{
+    position: absolute;
+    top: 3px;
+    left: 12px;
+    width: 20px;
+    color: white;
+}
+
+
+
+#option{
+    background-color:rgba(0, 0, 0, 0.555);
+    border-radius: 3px;
+    border: 1px solid white;
+    padding: 6px 36px;
+    width: 140px;
+    height: 32px;
+    margin-right: 20px;
+}
+
+#sign{
+    background-color: #e50914;
+    border-radius: 3px;
+    border: none;
+    padding: 4px 16px;
+    height: 32px;
+    width: 80px;
+}
+
+/* main*/
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+    text-align: center;
+    border-bottom: 10px solid gray;
+}
+
+#main div h1,h3,p{
+    color: white;
+}
+
+#main div h1{
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+#main div h3{
+    line-height: 0px;
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+#main div p{
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+input{
+    color: white;
+    background-color:rgba(0, 0, 0, 0.5);
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 376px; 
+    height: 36px;
+    padding: 9px 16px 8px;
+}
+
+::placeholder{
+    color: lightgray;
+    font-size: 18px;
+}
+
+#btn{
+    color: white;
+    background-color:#e50914;
+    border: none;
+    border-radius: 5px;
+    width: 201px;
+    height: 56px;
+    padding: 12px 24px;
+    margin: 0px 0px 0px 8px;
+    font-size: 22px;
+}
+
+/* section1 / enjoy1*/
+#Enjoy,#Enjoy2,#Enjoy3,#Enjoy4{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+}
+
+#Enjoy div{
+    width: 45%;
+}
+
+#left h1{
+    font-size: 44px;
+}
+
+#left p{
+    font-size: 24px;
+}
+
+#right{
+    position: relative;
+}
+
+#right img{
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+#right video{
+    position: absolute;
+    top: 77px;
+    left: 63px;
+    width: 73%;
+    z-index: 1;
+}
+
+#section1{
+    background-color: black;
+    border-bottom: 8px solid #232323;
+    padding: 60px 0px;
+}
+
+/* section2 / enjoy2*/
+#Enjoy2 div{
+    width: 45%;
+}
+
+#right2 h1
+{
+    font-size: 44px;
+}
+
+#right2 p
+{
+    font-size: 24px;
+}
+
+#left2{
+    position: relative;
+}
+
+#left2 img{
+    width: 100%;
+} 
+
+
+#left2 #mid2{
+    position: absolute;
+    top: 250px;
+    left: 110px;
+    width: 55%;
+    height: 25%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+    background-color: black;
+    border-radius: 8px;
+    border: 2px solid #5a5a5a;
+
+}
+
+#mid2 img{
+    width: 55px;
+    height: 70px;
+}
+
+#mid2 #gif{
+    width: 45px;
+    height: 50px;
+}
+
+#mid2 div #p1{
+    color: white;
+    margin-bottom: 0px;
+}
+
+#mid2 div #p2{
+    color: #0037dc;
+    margin-top: 0px;
+}
+
+/* section3 / enjoy3*/
+#Enjoy3 div{
+    width: 45%;
+}
+
+#left3 h1
+{
+    font-size: 44px;
+}
+
+#left3 p
+{
+    font-size: 24px;
+}
+
+#right3{
+    position: relative;
+}
+
+#right3 img{
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+#right3 video{
+    position: absolute;
+    top: 38px;
+    left: 94px;
+    width: 60%;
+    z-index: 1;
+}
+
+/* section4 / enjoy4*/
+#Enjoy4 div{
+    width: 45%;
+}
+
+#right4 h1
+{
+    font-size: 44px;
+}
+
+#right4 p
+{
+    font-size: 24px;
+}
+
+
+#left4{
+    position: relative;
+}
+
+#left4 img{
+    width: 100%;
+} 
+
+
+/*----mobile----*/
+
+@media (max-width:600px){
+
+    #body{
+        background-size: cover;
+    }
+
+    #container{
+        gap: 30px;
+        height: 80px;
+    }
+
+    #container #navleft svg{
+        width: 90px;
+        height: 60px;
+    }
+
+    #option{
+        padding: 6px 36px;
+        width: 45px;
+        margin-right: 3px;
+    }
+
+    
+    #main{
+        height: 400px;
+    }
+
+    #main div{
+        height: 350px;
+        width: 90%;
+        margin: auto;
+    }
+
+    #main div h1{
+        font-size: 28px;
+        font-weight: bolder;
+    }
+    
+    #main div h3{
+        line-height: 0px;
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+    
+    #main div p{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #main div div{
+        height: 0px;
+    }
+
+    input{
+        width: 70%; 
+        height: 30px;
+        padding: 9px 16px 8px;
+        margin-bottom: 15px;
+    }
+
+    #btn{
+        width: 148px;
+        height: 44px;
+        padding: 8px 16px;
+        font-size: 20px;
+    }
+    #Enjoy{
+        
+        width: 95%;
+        margin: auto;
+        flex-direction: column;
+    }
+    #Enjoy div{
+        width: 100%;
+        text-align: center;
+    }
+    #left h1{
+        font-size: 32px;
+    }
+    #left p{
+        font-size: 18px;
+    }
+    #right video{
+        position: absolute;
+        top: 59px;
+        left: 50px;
+        width: 73%;
+        z-index: 1;
+    }
+}
